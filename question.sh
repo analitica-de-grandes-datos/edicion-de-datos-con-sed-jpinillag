@@ -42,6 +42,6 @@
 #  >>> Escriba su codigo a partir de este punto <<<
 #
 
-tr ',' '.' < data.csv > data.csv
-tr ';' ',' < data.csv > data.csv
-sed '\([0-9][0-9]\)\/\([0-9][0-9]\)\/\([0-9][0-9]\)/,20\3-\2-\1/g' data.csv > data.csv
+tr ',' '.' < data.csv > data1.csv
+tr ';' ',' < data1.csv > data2.csv
+sed '\([0-9][0-9]\)\/\([0-9][0-9]\)\/\([0-9][0-9]\)/,20\3-\2-\1/g' data2.csv > output.csv
