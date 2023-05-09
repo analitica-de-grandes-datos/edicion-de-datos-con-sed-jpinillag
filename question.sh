@@ -50,4 +50,4 @@ sed 's/,/./g
   s/,\\Nn/\,\\N/g
   s/,\\n/\,\\N/g
   s/,C,\\N,/\,C,\\N,\\N/g
-  y/abcd/ABCD/' data.csv > outpout.csv
+  y/abcd/ABCD/' data.csv
