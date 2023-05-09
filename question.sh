@@ -46,4 +46,8 @@ tr ',' '.' < data.csv > data1.csv
 tr ';' ',' < data1.csv > data2.csv
 sed 's/\([0-9][0-9]\)\/\([0-9][0-9]\)\/\([0-9][0-9]\)/20\3-\2-\1/g' data2.csv > data3.csv
 sed 's/\([0-9]\)\/\([0-9]\)\/\(20[0-9][0-9]\)/\3-0\2-0\1/g' data3.csv > data4.csv
-
+sed 's/,,/\,\\N,\\N/g' data4.csv > data5.csv
+sed 's/,N/\,\\N/g' data5.csv > data6.csv
+sed 's/,\\Nn/\,\\N/g' data6.csv > data7.csv
+sed 's/,\\n/\,\\N/g' data7.csv > data8.csv
+sed 's/,C,\\N,/\,C,\\N,\\N/g' data8.csv > output.csv
