@@ -50,4 +50,5 @@ sed 's/,,/\,\\N,\\N/g' data4.csv > data5.csv
 sed 's/,N/\,\\N/g' data5.csv > data6.csv
 sed 's/,\\Nn/\,\\N/g' data6.csv > data7.csv
 sed 's/,\\n/\,\\N/g' data7.csv > data8.csv
-sed 's/,C,\\N,/\,C,\\N,\\N/g' data8.csv > output.csv
+sed 's/,C,\\N,/\,C,\\N,\\N/g' data8.csv > data9.csv
+sed 'y/abcd/ABCD/' data9.csv > outpout.csv
